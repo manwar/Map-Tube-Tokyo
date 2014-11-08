@@ -1,0 +1,11 @@
+Changes
+lib/Map/Tube/Tokyo.pm
+share/tokyo-map.xml
+Makefile.PL
+MANIFEST
+MANIFEST.SKIP
+README
+SIGNATURE
+t/00-load.t
+t/manifest.t
+t/pod.t
