@@ -1,5 +1,8 @@
 Revision history for Map-Tube-Tokyo
 
+0.03  Wed Nov 12 20:04:05 2014
+      - Restructed the map and organised junction station correctly.
+
 0.02  Tue Nov 11 22:54:10 2014
       - Added test script test-case-00.t.
 

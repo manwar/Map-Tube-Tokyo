@@ -1,49 +1,50 @@
 <tube>
   <!-- http://en.wikipedia.org/wiki/Tokyo_subway -->
   <stations>
+    <station id="MITA"            name="Mita"             line="Asakusa" link="A07,DALMON,E20,I05,I03,N03"/>
+    <station id="DALMON"          name="Daimon"           line="Asakusa" link="MITA,SHIMBASHI,G08,E19,I04"/>
+    <station id="SHIMBASHI"       name="Shimbasi"         line="Asakusa" link="DALMON,HIGASHI-GINZA,H09,E20,G07,M16,H08,G09"/>
+    <station id="HIGASHI-GINZA"   name="Higashi-ginza"    line="Asakusa" link="SHIMBASHI,A12,G08,H10,M16,H08,G09"/>
+    <station id="NIHOMBASHI"      name="Nihombashi"       line="Asakusa" link="A12,NINGYOCHO,H13,H12,T11,G10,Z09,G12,I09,OTEMACHI,T09,M18,Z08"/>
+    <station id="NONGYOCHO"       name="Ningyocho"        line="Asakusa" link="NIHOMBASHI,BAKURO-YOKOYAMA,S09,G11,T10,H14,H12,T11"/>
+    <station id="BAKURO-YOKOYAMA" name="Bakuro-yokoyama"  line="Asakusa" link="NINGYOCHO,A16,H13,S08,S10,H15"/>
+    <station id="KURAMAE"         name="Kuramae"          line="Asakusa" link="A16,ASAKUSA,G19,E10,E12"/>
+    <station id="ASAKUSA"         name="Asakusa"          line="Asakusa" link="KURAMAE,A19,E11,G18"/>
+    <station id="OSHIAGE"         name="Oshiage"          line="Asakusa" link="A19,Z13"/>
+    <station id="MEIJI-JINGUMAE"  name="Meiji-jingumae"   line="Chiyoda" link="C02,OMOTE-SANDO,F14,G02,Z02,Z01,F16,G01"/>
+    <station id="OMOTE-SANDO"     name="Omote-sando"      line="Chiyoda" link="MEIJI-JINGUMAE,C05,F15,F16,Z01,G01,E24,Z03,G03"/>
+    <station id="TAMEIKE-SANNO"   name="Tameike-sanno"    line="Chiyoda" link="C06,KASUMIGASEKI,M15,H06,G07,N05,G05,M13,Z04,Y16,N07"/>
+    <station id="KASUMIGASEKI"    name="Kasumigaseki"     line="Chiyoda" link="TAMEIKE-SANNO,HIBIYA,G06,N06,M14,I08,H07,Y18,H05"/>
+    <station id="HIBIYA"          name="Hibiya"           line="Chiyoda" link="KASUMIGASEKI,C10,M15,H06,I07,M16,H08,G09,I09,T09,M18,Z08"/>
+    <station id="OTEMACHI"        name="Otemachi"         line="Chiyoda" link="C10,SHIN-OCHANOMIZU,I08,H07,Y18,M17,T08,G12,Z09,G11,T10,NIHOMBASHI"/>
+    <station id="SHIN-OCHANOMIZU" name="Shin-ochanomizu"  line="Chiyoda" link="OTEMACHI,C13,I09,T09,M18,Z08,M20,S08,S06,I10,Z07"/>
+    <station id="KITA-SENJU"      name="Kita-senju"       line="Chiyoda" link="C17,C19,H20"/>
+
     <!-- http://en.wikipedia.org/wiki/Toei_Asakusa_Line -->
-    <station id="A01" name="Nishi-magome"     line="Asakusa Line" link="A02"/>
-    <station id="A02" name="Magome"           line="Asakusa Line" link="A01,A03"/>
-    <station id="A03" name="Nakanobu"         line="Asakusa Line" link="A02,A04"/>
-    <station id="A04" name="Togoshi"          line="Asakusa Line" link="A03,A05"/>
-    <station id="A05" name="Gotanda"          line="Asakusa Line" link="A04,A06"/>
-    <station id="A06" name="Takanawadai"      line="Asakusa Line" link="A05,A07"/>
-    <station id="A07" name="Sengakuji"        line="Asakusa Line" link="A06,A08,I04"/>
-    <station id="A08" name="Mita"             line="Asakusa Line" link="A07,A09,E20,I05,I03,N03"/>
-    <station id="A09" name="Daimon"           line="Asakusa Line" link="A08,A10,G08,E19,I04"/>
-    <station id="A10" name="Shimbasi"         line="Asakusa Line" link="A09,A11,H09,E20,G07,M16,H08,G09"/>
-    <station id="A11" name="Higashi-ginza"    line="Asakusa Line" link="A10,A12,G08,H10,M16,H08,G09"/>
-    <station id="A12" name="Takaracho"        line="Asakusa Line" link="A11,A13,H09,T10,G11"/>
-    <station id="A13" name="Nihombashi"       line="Asakusa Line" link="A12,A14,H13,H12,T11,G10,Z09,G12,I09,C11,T09,M18,Z08"/>
-    <station id="A14" name="Ningyocho"        line="Asakusa Line" link="A13,A15,S09,G11,T10,H14,H12,T11"/>
-    <station id="A15" name="Bakuro-yokoyama"  line="Asakusa Line" link="A14,A16,H13,S08,S10,H15"/>
-    <station id="A16" name="Asakusabashi"     line="Asakusa Line" link="A15,A17,S09,E11"/>
-    <station id="A17" name="Kuramae"          line="Asakusa Line" link="A16,A18,G19,E10,E12"/>
-    <station id="A18" name="Asakusa"          line="Asakusa Line" link="A17,A19,E11,G18"/>
-    <station id="A19" name="Honjo-azumabashi" line="Asakusa Line" link="A18,A20,G19,Z14"/>
-    <station id="A20" name="Oshiage"          line="Asakusa Line" link="A19,Z13"/>
+    <station id="A01" name="Nishi-magome"     line="Asakusa" link="A02"/>
+    <station id="A02" name="Magome"           line="Asakusa" link="A01,A03"/>
+    <station id="A03" name="Nakanobu"         line="Asakusa" link="A02,A04"/>
+    <station id="A04" name="Togoshi"          line="Asakusa" link="A03,A05"/>
+    <station id="A05" name="Gotanda"          line="Asakusa" link="A04,A06"/>
+    <station id="A06" name="Takanawadai"      line="Asakusa" link="A05,A07"/>
+    <station id="A07" name="Sengakuji"        line="Asakusa" link="A06,MITA,I04"/>
+    <station id="A12" name="Takaracho"        line="Asakusa" link="HIGASHI-GINZA,NIHOMBASHI,H09,T10,G11"/>
+    <station id="A16" name="Asakusabashi"     line="Asakusa" link="BAKURO-YOKOYAMA,KURAMAE,S09,E11"/>
+    <station id="A19" name="Honjo-azumabashi" line="Asakusa" link="ASAKUSA,OSHIAGE,G19,Z14"/>
 
     <!-- http://en.wikipedia.org/wiki/Tokyo_Metro_Chiyoda_Line -->
-    <station id="C01" name="Yoyogi-uehara"    line="Chiyoda Line" link="C02"/>
-    <station id="C02" name="Yoyogi-koen"      line="Chiyoda Line" link="C01,C03,F15"/>
-    <station id="C03" name="Meiji-jingumae"   line="Chiyoda Line" link="C02,C04,F14,G02,Z02,Z01,F16,G01"/>
-    <station id="C04" name="Omote-sando"      line="Chiyoda Line" link="C03,C05,F15,F16,Z01,G01,E24,Z03,G03"/>
-    <station id="C05" name="Nogizaka"         line="Chiyoda Line" link="C04,C06,Z02,G02"/>
-    <station id="C06" name="Akasaka"          line="Chiyoda Line" link="C05,C07,G06,N06,M14"/>
-    <station id="C07" name="Tameike-sanno"    line="Chiyoda Line" link="C06,C08,M15,H06,G07,N05,G05,M13,Z04,Y16,N07"/>
-    <station id="C08" name="Kasumigaseki"     line="Chiyoda Line" link="C07,C09,G06,N06,M14,I08,H07,Y18,H05"/>
-    <station id="C09" name="Hibiya"           line="Chiyoda Line" link="C08,C10,M15,H06,I07,M16,H08,G09,I09,T09,M18,Z08"/>
-    <station id="C10" name="Nijubashimae"     line="Chiyoda Line" link="C09,C11,I08,H07,Y18,I09,T09,M18,Z08"/>
-    <station id="C11" name="Otemachi"         line="Chiyoda Line" link="C10,C12,I08,H07,Y18,M17,T08,G12,Z09,G11,T10,A13"/>
-    <station id="C12" name="Shin-ochanomizu"  line="Chiyoda Line" link="C11,C13,I09,T09,M18,Z08,M20,S08,S06,I10,Z07"/>
-    <station id="C13" name="Yushima"          line="Chiyoda Line" link="C12,C14,S07,M19"/>
-    <station id="C14" name="Nezu"             line="Chiyoda Line" link="C13,C15"/>
-    <station id="C15" name="Sendagi"          line="Chiyoda Line" link="C14,C16"/>
-    <station id="C16" name="Nishi-nippori"    line="Chiyoda Line" link="C15,C17"/>
-    <station id="C17" name="Machiya"          line="Chiyoda Line" link="C16,C18,H21"/>
-    <station id="C18" name="Kita-senju"       line="Chiyoda Line" link="C17,C19,H20"/>
-    <station id="C19" name="Ayase"            line="Chiyoda Line" link="C18,C20,H21"/>
-    <station id="C20" name="Kita-ayase"       line="Chiyoda Line" link="C19"/>
+    <station id="C01" name="Yoyogi-uehara"    line="Chiyoda" link="C02"/>
+    <station id="C02" name="Yoyogi-koen"      line="Chiyoda" link="C01,MEIJI-JINGUMAE,F15"/>
+    <station id="C05" name="Nogizaka"         line="Chiyoda" link="OMOTE-SANDO,C06,Z02,G02"/>
+    <station id="C06" name="Akasaka"          line="Chiyoda" link="C05,TAMEIKE-SANNO,G06,N06,M14"/>
+    <station id="C10" name="Nijubashimae"     line="Chiyoda" link="HIBIYA,OTEMACHI,I08,H07,Y18,I09,T09,M18,Z08"/>
+    <station id="C13" name="Yushima"          line="Chiyoda" link="SHIN-OCHANOMIZU,C14,S07,M19"/>
+    <station id="C14" name="Nezu"             line="Chiyoda" link="C13,C15"/>
+    <station id="C15" name="Sendagi"          line="Chiyoda" link="C14,C16"/>
+    <station id="C16" name="Nishi-nippori"    line="Chiyoda" link="C15,C17"/>
+    <station id="C17" name="Machiya"          line="Chiyoda" link="C16,KITA-SENJU,H21"/>
+    <station id="C19" name="Ayase"            line="Chiyoda" link="KITA-SENJU,C20,H21"/>
+    <station id="C20" name="Kita-ayase"       line="Chiyoda" link="C19"/>
 
     <!-- http://en.wikipedia.org/wiki/Toei_Mita_Line -->
     <!-- http://en.wikipedia.org/wiki/Toei_Shinjuku_Line -->
