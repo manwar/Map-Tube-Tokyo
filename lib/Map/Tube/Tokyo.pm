@@ -1,14 +1,14 @@
 package Map::Tube::Tokyo;
 
-$Map::Tube::Tokyo::VERSION = '0.03';
+$Map::Tube::Tokyo::VERSION = '0.04';
 
 =head1 NAME
 
-Map::Tube::Tokyo - Interface to the Tokyo Tube Map.
+Map::Tube::Tokyo - Interface to the Tokyo Subway.
 
 =head1 VERSION
 
-Version 0.03
+Version 0.04
 
 =cut
 
@@ -38,7 +38,7 @@ The constructor DO NOT expects parameters.This setup the default node definition
     use strict; use warnings;
     use Map::Tube::Tokyo;
 
-    my $tube = Map::Tube::Tokyo->new;
+    my $subway = Map::Tube::Tokyo->new;
 
 =head1 METHODS
 
@@ -50,8 +50,8 @@ insensitive. It returns back the node sequence from START to END.
     use strict; use warnings;
     use Map::Tube::Tokyo;
 
-    my $tube  = Map::Tube::Tokyo->new;
-    my $route = $tube->get_shortest_route('Takaracho', 'Otemachi');
+    my $subway = Map::Tube::Tokyo->new;
+    my $route  = $subway->get_shortest_route('Takaracho', 'Otemachi');
 
     print "Route: $route\n";;
 

@@ -9,4 +9,5 @@ SIGNATURE
 t/00-load.t
 t/manifest.t
 t/pod.t
-t/test-case-00.t
+t/generic.t
+t/asakusa-chiyoda.t
