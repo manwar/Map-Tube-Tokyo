@@ -1,5 +1,9 @@
 Revision history for Map-Tube-Tokyo
 
+0.04  Mon Dec 01 23:05:00 2014
+      - Upgraded to use Map::Tube v2.27 as it brings in new fix and feature.
+      - Updated test case to comply with the updated package Map::Tube.
+
 0.03  Wed Nov 12 20:04:05 2014
       - Restructed the map and organised junction station correctly.
 
