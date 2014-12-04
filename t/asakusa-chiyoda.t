@@ -1,3 +1,4 @@
+#!perl
 use strict; use warnings;
 use Test::More tests => 7;
 use Map::Tube::Tokyo;
@@ -7,14 +8,23 @@ while (<DATA>) {
     chomp;
     next if /^\#/;
     my ($description, $from, $to, $expected) = split /\|/;
-    is($subway->get_shortest_route($from, $to), $expected, $description);
+    is_deeply($subway->get_shortest_route($from, $to), _expected_route($expected), $description);
+}
+
+sub _expected_route {
+    my ($route) = @_;
+    my $routes  = [];
+    foreach my $name (split /\,/,$route) {
+        push @$routes, $subway->get_node_by_name($name);
+    }
+    return Map::Tube::Route->new({ nodes => $routes });
 }
 
 __DATA__
-Route 1|Takaracho|Otemachi|Takaracho (Asakusa), Nihombashi (Asakusa), Otemachi (Chiyoda)
-Route 2|   Takaracho|Otemachi|Takaracho (Asakusa), Nihombashi (Asakusa), Otemachi (Chiyoda)
-Route 3|Takaracho|   Otemachi|Takaracho (Asakusa), Nihombashi (Asakusa), Otemachi (Chiyoda)
-Route 4|Takaracho   |Otemachi|Takaracho (Asakusa), Nihombashi (Asakusa), Otemachi (Chiyoda)
-Route 5|Takaracho|Otemachi   |Takaracho (Asakusa), Nihombashi (Asakusa), Otemachi (Chiyoda)
-Route 6|  Takaracho   |  Otemachi  |Takaracho (Asakusa), Nihombashi (Asakusa), Otemachi (Chiyoda)
-Route 7|  takaracho   |  otemachi  |Takaracho (Asakusa), Nihombashi (Asakusa), Otemachi (Chiyoda)
+Route 1|Takaracho|Otemachi|Takaracho,Nihombashi,Otemachi
+Route 2|   Takaracho|Otemachi|Takaracho,Nihombashi,Otemachi
+Route 3|Takaracho|   Otemachi|Takaracho,Nihombashi,Otemachi
+Route 4|Takaracho   |Otemachi|Takaracho,Nihombashi,Otemachi
+Route 5|Takaracho|Otemachi   |Takaracho,Nihombashi,Otemachi
+Route 6|  Takaracho   |  Otemachi  |Takaracho,Nihombashi,Otemachi
+Route 7|  takaracho   |  otemachi  |Takaracho,Nihombashi,Otemachi

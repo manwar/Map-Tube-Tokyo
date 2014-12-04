@@ -1,5 +1,9 @@
 Revision history for Map-Tube-Tokyo
 
+0.06  Thu Dec 04 20:00:10 2014
+      - Updated unit test to make use of new class provided by Map::Tube role.
+      - Updated description of method get_shortest_route() in the pod documemt.
+
 0.05  Thu Dec 04 13:45:10 2014
       - Upgraded to use Map::Tube v2.31 as it brings in new fix and feature.
       - Added test case for case insensitive station name.
