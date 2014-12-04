@@ -1,5 +1,11 @@
 Revision history for Map-Tube-Tokyo
 
+0.05  Thu Dec 04 13:45:10 2014
+      - Upgraded to use Map::Tube v2.31 as it brings in new fix and feature.
+      - Added test case for case insensitive station name.
+      - Adding missing stations to the map data.
+      - Removed SIGNATURE file.
+
 0.04  Mon Dec 01 23:05:00 2014
       - Upgraded to use Map::Tube v2.27 as it brings in new fix and feature.
       - Updated test case to comply with the updated package Map::Tube.

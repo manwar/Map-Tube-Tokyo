@@ -1,5 +1,5 @@
 use strict; use warnings;
-use Test::More tests => 6;
+use Test::More tests => 7;
 use Map::Tube::Tokyo;
 
 my $subway = Map::Tube::Tokyo->new;
@@ -17,3 +17,4 @@ Route 3|Takaracho|   Otemachi|Takaracho (Asakusa), Nihombashi (Asakusa), Otemach
 Route 4|Takaracho   |Otemachi|Takaracho (Asakusa), Nihombashi (Asakusa), Otemachi (Chiyoda)
 Route 5|Takaracho|Otemachi   |Takaracho (Asakusa), Nihombashi (Asakusa), Otemachi (Chiyoda)
 Route 6|  Takaracho   |  Otemachi  |Takaracho (Asakusa), Nihombashi (Asakusa), Otemachi (Chiyoda)
+Route 7|  takaracho   |  otemachi  |Takaracho (Asakusa), Nihombashi (Asakusa), Otemachi (Chiyoda)

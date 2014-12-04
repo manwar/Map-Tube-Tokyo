@@ -1,6 +1,6 @@
 package Map::Tube::Tokyo;
 
-$Map::Tube::Tokyo::VERSION = '0.04';
+$Map::Tube::Tokyo::VERSION = '0.05';
 
 =head1 NAME
 
@@ -8,7 +8,7 @@ Map::Tube::Tokyo - Interface to the Tokyo Subway.
 
 =head1 VERSION
 
-Version 0.04
+Version 0.05
 
 =cut
 
