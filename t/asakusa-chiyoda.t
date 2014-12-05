@@ -13,11 +13,15 @@ while (<DATA>) {
 
 sub _expected_route {
     my ($route) = @_;
-    my $routes  = [];
+    my $nodes   = [];
     foreach my $name (split /\,/,$route) {
-        push @$routes, $subway->get_node_by_name($name);
+        push @$nodes, $subway->get_node_by_name($name);
     }
-    return Map::Tube::Route->new({ nodes => $routes });
+
+    return Map::Tube::Route->new(
+       { from  => $nodes->[0],
+         to    => $nodes->[-1],
+         nodes => $nodes });
 }
 
 __DATA__

@@ -1,5 +1,9 @@
 Revision history for Map-Tube-Tokyo
 
+0.08  Fri Dec 05 20:56:10 2014
+      - Upgraded to use Map::Tube v2.33 as it brings in new fix and feature.
+      - Updated unit test to reflect the changes in Map::Tube v2.33.
+
 0.07  Fri Dec 05 11:05:10 2014
       - Updated the description of method get_shortest_route().
 
