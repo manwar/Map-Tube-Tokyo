@@ -1,5 +1,10 @@
 Revision history for Map-Tube-Tokyo
 
+0.09  Wed Dec 24 19:18:10 2014
+      - Upgraded to use Map::Tube v2.46.
+      - Added package to list subway stations for Asakusa Line.
+      - Updated pod document for Map::Tube::Tokyo about the above changes.
+
 0.08  Fri Dec 05 20:56:10 2014
       - Upgraded to use Map::Tube v2.33 as it brings in new fix and feature.
       - Updated unit test to reflect the changes in Map::Tube v2.33.

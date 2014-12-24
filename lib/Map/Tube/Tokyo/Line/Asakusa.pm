@@ -1,96 +1,71 @@
-package Map::Tube::Tokyo;
+package Map::Tube::Tokyo::Line::Asakusa;
 
-$Map::Tube::Tokyo::VERSION = '0.09';
+$Map::Tube::Tokyo::Line::Asakusa::VERSION = '0.09';
 
 =encoding utf8
 
 =head1 NAME
 
-Map::Tube::Tokyo - Interface to the Tokyo Subway Map.
+Map::Tube::Tokyo::Line::Asakusa - Tokyo Subway Asakusa Line stations.
 
 =head1 VERSION
 
 Version 0.09
 
-=cut
-
-use 5.006;
-use Data::Dumper;
-use File::Share ':all';
-
-use Moo;
-use namespace::clean;
-
-has xml => (is => 'ro', default => sub { return dist_file('Map-Tube-Tokyo', 'tokyo-map.xml') });
-
-with 'Map::Tube';
-
 =head1 DESCRIPTION
 
-It currently provides functionality to find the shortest  route between  the  two
-given  stations. It covers the following Tokyo Subway Lines just yet:
+Tokyo Subway Asakusa Line stations.
+
+    +------------------+------------------------------+
+    |                  |                              |
+    | Station Name     | Connected To                 |
+    |                  |                              |
+    +------------------+------------------------------+
+    | Nishi-magome     | Magome                       |
+    | Magome           | Nishi-magome, Nakanobu       |
+    | Nakanobu         | Magome, Togoshi              |
+    | Togoshi          | Nakanobu, Gotanda            |
+    | Gotanda          | Togoshi, Takanwadai          |
+    | Takanawadai      | Gotanda, Sengakuji           |
+    | Sengakuji        | Takanawadai, Mita            |
+    | Mita             | Sengakuji, Diamon            |
+    | Diamon           | Mita, Shimbashi              |
+    | Shimbashi        | Diamon, Higashi-ginza        |
+    | Higashi-ginza    | Shimbashi, Takaracho         |
+    | Takaracho        | Higashi-ginza, Nihombashi    |
+    | Nihombashi       | Takaracho, Ningyocho         |
+    | Ningyocho        | Nihombashi, Bakuro-yokoyama  |
+    | Bakuro-yokoyama  | Ningyocho, Asakusabahi       |
+    | Asakusabashi     | Bakuro-yokoyama, Kuramae     |
+    | Kuramae          | Asakusabashi, Asakusa        |
+    | Asakusa          | Kuramae, Honjo-azamubashi    |
+    | Honjo-azumabashi | Asakusa, Oshiage             |
+    | Oshiage          | Honjo-azumbashi              |
+    +------------------+------------------------------+
+
+=head1 NOTE
 
 =over 2
 
-=item * L<Asakusa Line|Map::Tube::Tokyo::Line::Asakusa>
+=item * The station "Mita" is also part of Mita Line.
 
-=item * Chiyoda Line
+=item * The station "Diamon" is also part of Oedo Line.
 
-=back
+=item * The station "Higashi-ginza" is also part of Hibiya Line.
 
-=head1 TODO (Subway Lines)
+=item * The station "Nihombashi" is also part of Ginza Line | Tōzai Line.
 
-=over 2
+=item * The station "Ningyocho"  is also part of Hibiya Line.
 
-=item * Mita Line
+=item * The station "Bakuro-yokoyama" is also part of Shinjuku Line.
 
-=item * Shinjuku Line
+=item * The station "Kuramae" is also aprt of Oedo Line.
 
-=item * Hibiya Line
+=item * The station "Asakusa" is also part of Ginza Line.
 
-=item * Tōzai Line
-
-=item * Yūrakuchō Line
-
-=item * Hanzōmon Line
-
-=item * Namboku Line
-
-=item * Fukutoshin Line
-
-=item * Marunouchi Line
-
-=item * Ginza Line
-
-=item * Oedo Line
+=item * The station "Oshiage" is also part of Hanzōmon Line.
 
 =back
-
-For more information about Tokyo Map, click L<here|http://en.wikipedia.org/wiki/Tokyo_subway>.
-
-=head1 CONSTRUCTOR
-
-The constructor DO NOT expects parameters.This setup the default node definitions.
-
-    use strict; use warnings;
-    use Map::Tube::Tokyo;
-
-    my $subway = Map::Tube::Tokyo->new;
-
-=head1 METHODS
-
-=head2 get_shortest_route($from, $to)
-
-Expects 'from' and 'to' station name and returns an object of type L<Map::Tube::Route>.
-On error it returns an object of type L<Map::Tube::Exception>.
-
-    use strict; use warnings;
-    use Map::Tube::Tokyo;
-
-    my $subway = Map::Tube::Tokyo->new;
-    my $route  = $subway->get_shortest_route('Takaracho', 'Otemachi');
-
-    print "Route: $route\n";;
 
 =head1 AUTHOR
 
@@ -111,7 +86,7 @@ bug as I make changes.
 
 You can find documentation for this module with the perldoc command.
 
-    perldoc Map::Tube::Tokyo
+    perldoc Map::Tube::Tokyo::Line::Asakusa
 
 You can also look for information at:
 
@@ -175,4 +150,4 @@ OF THE PACKAGE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 =cut
 
-1; # End of Map::Tube::Tokyo
+1; # End of Map::Tube::Tokyo::Line::Asakusa
