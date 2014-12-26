@@ -1,96 +1,75 @@
-package Map::Tube::Tokyo;
+package Map::Tube::Tokyo::Line::Chiyoda;
 
-$Map::Tube::Tokyo::VERSION = '0.10';
+$Map::Tube::Tokyo::Line::Chiyoda::VERSION = '0.10';
 
 =encoding utf8
 
 =head1 NAME
 
-Map::Tube::Tokyo - Interface to the Tokyo Subway Map.
+Map::Tube::Tokyo::Line::Chiyoda - Tokyo Subway Chiyoda Line stations.
 
 =head1 VERSION
 
 Version 0.10
 
-=cut
-
-use 5.006;
-use Data::Dumper;
-use File::Share ':all';
-
-use Moo;
-use namespace::clean;
-
-has xml => (is => 'ro', default => sub { return dist_file('Map-Tube-Tokyo', 'tokyo-map.xml') });
-
-with 'Map::Tube';
-
 =head1 DESCRIPTION
 
-It currently provides functionality to find the shortest  route between  the  two
-given  stations. It covers the following Tokyo Subway Lines just yet:
+Tokyo Subway Chiyoda Line stations.
+
+    +-----------------+-------------------------------+
+    |                 |                               |
+    | Station Name    | Connected To                  |
+    |                 |                               |
+    +-----------------+-------------------------------+
+    | Yoyogi-uehara   | Yoyogi-koen                   |
+    | Yoyogi-koen     | Yoyogi-uehara, Meiji-jingumae |
+    | Meiji-jingumae  | Yoyogi-koen, Omote-sando      |
+    | Omote-sando     | Meiji-jingumae, Nogizaka      |
+    | Nogizaka        | Omote-sando, Akasaka          |
+    | Akasaka         | Nogizaka, Tameiki-sanno       |
+    | Tameike-sanno   | Akasaka, Kasumgaseki          |
+    | Kasumgaseki     | Tameike-sanno, Hibiya         |
+    | Hibiya          | Kasumgaseki, Nijubashimae     |
+    | Nijubashimae    | Hibiya, Otemachi              |
+    | Otemachi        | Nijubashimae, Shin-ochanomizu |
+    | Shin-ochanomizu | Otemachi, Yushima             |
+    | Yushima         | Shin-ochanomizu, Nezu         |
+    | Nezu            | Yushima, Sendagi              |
+    | Sendagi         | Nezu, Nishi-nippori           |
+    | Nishi-nippori   | Sendagi, Machiya              |
+    | Machiya         | Nishi-nippori, Kita-senju     |
+    | Kita-senju      | Machiya, Ayase                |
+    | Ayase           | Kita-senju, Kita-ayase        |
+    | Kita-ayase      | Ayase                         |
+    +-----------------+-------------------------------+
+
+=head1 NOTE
 
 =over 2
 
-=item * L<Asakusa Line|Map::Tube::Tokyo::Line::Asakusa>
+=item * The station "Meiji-jingumae" is also part of Fukutoshin Line.
 
-=item * L<Chiyoda Line|Map::Tube::Tokyo::Line::Chiyoda>
+=item * The station "Omote-sando" is also part of Ginza Line
+        | Hanzōmon Line.
 
-=back
+=item * The station "Tameike-sanno" is also part of Ginza Line
+        | Namboku Line
+        | Marunouchi Line.
 
-=head1 TODO (Subway Lines)
+=item * The station "Kasumigaseki" is also part of HIbiya Line
+        | Marunouchi Line.
 
-=over 2
+=item * The station "Hibiya" is also part of Mita Line
+        | Hibiya Line.
 
-=item * Mita Line
+=item * The station "Otemachi" is also part of Mita Line
+        | Tōzai Line
+        | Hanzōmon Line
+        | Marunouchi Line.
 
-=item * Shinjuku Line
-
-=item * Hibiya Line
-
-=item * Tōzai Line
-
-=item * Yūrakuchō Line
-
-=item * Hanzōmon Line
-
-=item * Namboku Line
-
-=item * Fukutoshin Line
-
-=item * Marunouchi Line
-
-=item * Ginza Line
-
-=item * Oedo Line
+=item * The station "Kita-senju" is also part of Hibiya Line.
 
 =back
-
-For more information about Tokyo Map, click L<here|http://en.wikipedia.org/wiki/Tokyo_subway>.
-
-=head1 CONSTRUCTOR
-
-The constructor DO NOT expects parameters.This setup the default node definitions.
-
-    use strict; use warnings;
-    use Map::Tube::Tokyo;
-
-    my $subway = Map::Tube::Tokyo->new;
-
-=head1 METHODS
-
-=head2 get_shortest_route($from, $to)
-
-Expects 'from' and 'to' station name and returns an object of type L<Map::Tube::Route>.
-On error it returns an object of type L<Map::Tube::Exception>.
-
-    use strict; use warnings;
-    use Map::Tube::Tokyo;
-
-    my $subway = Map::Tube::Tokyo->new;
-    my $route  = $subway->get_shortest_route('Takaracho', 'Otemachi');
-
-    print "Route: $route\n";;
 
 =head1 AUTHOR
 
@@ -111,7 +90,7 @@ bug as I make changes.
 
 You can find documentation for this module with the perldoc command.
 
-    perldoc Map::Tube::Tokyo
+    perldoc Map::Tube::Tokyo::Line::Chiyoda
 
 You can also look for information at:
 
@@ -175,4 +154,4 @@ OF THE PACKAGE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 =cut
 
-1; # End of Map::Tube::Tokyo
+1; # End of Map::Tube::Tokyo::Line::Chiyoda

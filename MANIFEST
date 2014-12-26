@@ -1,6 +1,7 @@
 Changes
 lib/Map/Tube/Tokyo.pm
 lib/Map/Tube/Tokyo/Line/Asakusa.pm
+lib/Map/Tube/Tokyo/Line/Chiyoda.pm
 share/tokyo-map.xml
 Makefile.PL
 MANIFEST
