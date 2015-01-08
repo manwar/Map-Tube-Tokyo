@@ -4,6 +4,7 @@ lib/Map/Tube/Tokyo/Line/Asakusa.pm
 lib/Map/Tube/Tokyo/Line/Chiyoda.pm
 share/tokyo-map.xml
 Makefile.PL
+LICENSE
 MANIFEST
 MANIFEST.SKIP
 README
@@ -11,4 +12,6 @@ t/00-load.t
 t/manifest.t
 t/pod.t
 t/generic.t
+t/meta-yml.t
+t/meta-json.t
 t/asakusa-chiyoda.t

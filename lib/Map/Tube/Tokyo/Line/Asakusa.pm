@@ -1,6 +1,7 @@
 package Map::Tube::Tokyo::Line::Asakusa;
 
-$Map::Tube::Tokyo::Line::Asakusa::VERSION = '0.09';
+$Map::Tube::Tokyo::Line::Asakusa::VERSION   = '0.11';
+$Map::Tube::Tokyo::Line::Asakusa::AUTHORITY = 'cpan:MANWAR';
 
 =encoding utf8
 
@@ -10,7 +11,7 @@ Map::Tube::Tokyo::Line::Asakusa - Tokyo Subway Asakusa Line stations.
 
 =head1 VERSION
 
-Version 0.09
+Version 0.11
 
 =head1 DESCRIPTION
 
@@ -112,7 +113,7 @@ L<http://search.cpan.org/dist/Map-Tube-Tokyo/>
 
 =head1 LICENSE AND COPYRIGHT
 
-Copyright 2014 Mohammad S Anwar.
+Copyright (C) 2014 - 2015 Mohammad S Anwar.
 
 This  program  is  free software; you can redistribute it and/or modify it under
 the  terms  of the the Artistic License (2.0). You may obtain a copy of the full
