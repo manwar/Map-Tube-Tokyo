@@ -1,5 +1,8 @@
 Revision history for Map-Tube-Tokyo
 
+0.12  Thu Jan 08 16:00:00 2015
+      - Added line 'use strict; use warnings;' to all the packages Map::Tube::Tokyo::Line::*.pm file.
+
 0.11  Thu Jan 08 15:30:20 2015
       - Upgraded to use Map::Tube v2.61 as it brings in new fix and feature.
       - Updated Makefile.PL to generate the key 'provides' for META file correctly.

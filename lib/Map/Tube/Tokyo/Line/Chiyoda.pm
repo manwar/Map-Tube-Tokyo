@@ -1,7 +1,9 @@
 package Map::Tube::Tokyo::Line::Chiyoda;
 
-$Map::Tube::Tokyo::Line::Chiyoda::VERSION   = '0.11';
+$Map::Tube::Tokyo::Line::Chiyoda::VERSION   = '0.12';
 $Map::Tube::Tokyo::Line::Chiyoda::AUTHORITY = 'cpan:MANWAR';
+
+use strict; use warnings;
 
 =encoding utf8
 
@@ -11,7 +13,7 @@ Map::Tube::Tokyo::Line::Chiyoda - Tokyo Subway Chiyoda Line stations.
 
 =head1 VERSION
 
-Version 0.11
+Version 0.12
 
 =head1 DESCRIPTION
 
