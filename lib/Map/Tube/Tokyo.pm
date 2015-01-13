@@ -1,6 +1,6 @@
 package Map::Tube::Tokyo;
 
-$Map::Tube::Tokyo::VERSION   = '0.12';
+$Map::Tube::Tokyo::VERSION   = '0.13';
 $Map::Tube::Tokyo::AUTHORITY = 'cpan:MANWAR';
 
 =encoding utf8
@@ -11,7 +11,7 @@ Map::Tube::Tokyo - Interface to the Tokyo Subway Map.
 
 =head1 VERSION
 
-Version 0.12
+Version 0.13
 
 =cut
 

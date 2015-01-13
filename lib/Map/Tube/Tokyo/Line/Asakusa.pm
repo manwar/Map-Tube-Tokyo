@@ -1,8 +1,9 @@
 package Map::Tube::Tokyo::Line::Asakusa;
 
-$Map::Tube::Tokyo::Line::Asakusa::VERSION   = '0.12';
+$Map::Tube::Tokyo::Line::Asakusa::VERSION   = '0.13';
 $Map::Tube::Tokyo::Line::Asakusa::AUTHORITY = 'cpan:MANWAR';
 
+use 5.006;
 use strict; use warnings;
 
 =encoding utf8
@@ -13,7 +14,7 @@ Map::Tube::Tokyo::Line::Asakusa - Tokyo Subway Asakusa Line stations.
 
 =head1 VERSION
 
-Version 0.12
+Version 0.13
 
 =head1 DESCRIPTION
 

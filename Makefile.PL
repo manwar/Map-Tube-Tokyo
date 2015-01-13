@@ -24,7 +24,7 @@ WriteMakefile(
         'Moo'              => 0,
         'namespace::clean' => 0,
         'File::Share'      => 0,
-        'Map::Tube'        => '2.61',
+        'Map::Tube'        => '2.62',
         'File::ShareDir::Install' => 0,
     },
     dist  => { COMPRESS => 'gzip -9f', SUFFIX => 'gz', },
@@ -33,11 +33,11 @@ WriteMakefile(
         'meta-spec' => { version => 2 },
         provides    => {
             'Map::Tube::Tokyo'
-                => { file => 'lib/Map/Tube/Tokyo.pm',              version => '0.12' },
+                => { file => 'lib/Map/Tube/Tokyo.pm',              version => '0.13' },
             'Map::Tube::Tokyo::Line::Asakusa'
-                => { file => 'lib/Map/Tube/Tokyo/Line/Asakusa.pm', version => '0.12' },
+                => { file => 'lib/Map/Tube/Tokyo/Line/Asakusa.pm', version => '0.13' },
             'Map::Tube::Tokyo::Line::Chiyoda'
-                => { file => 'lib/Map/Tube/Tokyo/Line/Chiyoda.pm', version => '0.12' },
+                => { file => 'lib/Map/Tube/Tokyo/Line/Chiyoda.pm', version => '0.13' },
         },
         resources => {
             repository => {

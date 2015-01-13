@@ -1,4 +1,6 @@
 #!perl
+
+use 5.006;
 use strict; use warnings;
 use Test::More tests => 7;
 use Map::Tube::Tokyo;

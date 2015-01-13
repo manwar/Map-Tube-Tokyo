@@ -1,5 +1,9 @@
 Revision history for Map-Tube-Tokyo
 
+0.13  Tue Jan 13 15:23:10 2015
+      - Upgraded to use Map::Tube v2.62.
+      - Tidied up unit test scripts.
+
 0.12  Thu Jan 08 16:00:00 2015
       - Added line 'use strict; use warnings;' to all the packages Map::Tube::Tokyo::Line::*.pm file.
 
