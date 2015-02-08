@@ -1,3 +1,5 @@
+#!/usr/bin/perl
+
 use 5.006;
 use strict;
 use warnings FATAL => 'all';
@@ -24,20 +26,16 @@ WriteMakefile(
         'Moo'              => 0,
         'namespace::clean' => 0,
         'File::Share'      => 0,
-        'Map::Tube'        => '2.61',
-        'File::ShareDir::Install' => 0,
+        'Map::Tube'        => '2.78',
     },
     dist  => { COMPRESS => 'gzip -9f', SUFFIX => 'gz', },
     clean => { FILES => 'Map-Tube-Tokyo-*' },
     (eval { ExtUtils::MakeMaker->VERSION(6.46) } ? (META_MERGE => {
         'meta-spec' => { version => 2 },
         provides    => {
-            'Map::Tube::Tokyo'
-                => { file => 'lib/Map/Tube/Tokyo.pm',              version => '0.12' },
-            'Map::Tube::Tokyo::Line::Asakusa'
-                => { file => 'lib/Map/Tube/Tokyo/Line/Asakusa.pm', version => '0.12' },
-            'Map::Tube::Tokyo::Line::Chiyoda'
-                => { file => 'lib/Map/Tube/Tokyo/Line/Chiyoda.pm', version => '0.12' },
+            'Map::Tube::Tokyo'                => { file => 'lib/Map/Tube/Tokyo.pm',              version => '0.13' },
+            'Map::Tube::Tokyo::Line::Asakusa' => { file => 'lib/Map/Tube/Tokyo/Line/Asakusa.pm', version => '0.13' },
+            'Map::Tube::Tokyo::Line::Chiyoda' => { file => 'lib/Map/Tube/Tokyo/Line/Chiyoda.pm', version => '0.13' },
         },
         resources => {
             repository => {

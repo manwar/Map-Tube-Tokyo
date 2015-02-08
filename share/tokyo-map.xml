@@ -1,4 +1,21 @@
-<tube>
+<?xml version="1.0" encoding="UTF-8"?>
+<tube name="Tokyo Subway">
+  <lines>
+    <line id="Asakusa"    name="Asakusa"    color="#F9429E" /> <!-- Rose        -->
+    <line id="Chiyoda"    name="Chiyoda"    color="#006400" /> <!-- Green       -->
+    <line id="Mita"       name="Mita"       color="#000080" /> <!-- Blue        -->
+    <line id="Shinjuku"   name="Shinjuku"   color="#006400" /> <!-- Leaf Green  -->
+    <line id="Hibiya"     name="Hibiya"     color="#AFAFAF" /> <!-- Silver      -->
+    <line id="Tōzai"      name="Tōzai"      color="#000080" /> <!-- Sky Blue    -->
+    <line id="Yūrakuchō"  name="Yūrakuchō"  color="#FFD700" /> <!-- Gold        -->
+    <line id="Hanzōmon"   name="Hanzōmon"   color="#551A8B" /> <!-- Purple      -->
+    <line id="Namboku"    name="Namboku"    color="#0E302F" /> <!-- Teal        -->
+    <line id="Fukutoshin" name="Fukutoshin" color="#550000" /> <!-- Brown       -->
+    <line id="Marunouchi" name="Marunouchi" color="#8B0000" /> <!-- Red         -->
+    <line id="Ginza"      name="Ginza"      color="#FF4F00" /> <!-- Orange      -->
+    <line id="Oedo"       name="Oedo"       color="#9b111e" /> <!-- Ruby        -->
+  </lines>
+
   <!-- http://en.wikipedia.org/wiki/Tokyo_subway -->
   <stations>
     <station id="MITA"            name="Mita"             line="Asakusa" link="A07,DALMON,E20,I05,I03,N03"/>
