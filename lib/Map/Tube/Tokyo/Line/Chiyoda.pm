@@ -1,6 +1,6 @@
 package Map::Tube::Tokyo::Line::Chiyoda;
 
-$Map::Tube::Tokyo::Line::Chiyoda::VERSION   = '0.15';
+$Map::Tube::Tokyo::Line::Chiyoda::VERSION   = '0.16';
 $Map::Tube::Tokyo::Line::Chiyoda::AUTHORITY = 'cpan:MANWAR';
 
 use 5.006;
@@ -14,38 +14,38 @@ Map::Tube::Tokyo::Line::Chiyoda - Tokyo Subway Map: Chiyoda Line.
 
 =head1 VERSION
 
-Version 0.15
+Version 0.16
 
 =head1 DESCRIPTION
 
 Tokyo Subway Map: Chiyoda Line.
 
-    +-----------------+-------------------------------+
-    |                 |                               |
-    | Station Name    | Connected To                  |
-    |                 |                               |
-    +-----------------+-------------------------------+
-    | Yoyogi-uehara   | Yoyogi-koen                   |
-    | Yoyogi-koen     | Yoyogi-uehara, Meiji-jingumae |
-    | Meiji-jingumae  | Yoyogi-koen, Omote-sando      |
-    | Omote-sando     | Meiji-jingumae, Nogizaka      |
-    | Nogizaka        | Omote-sando, Akasaka          |
-    | Akasaka         | Nogizaka, Tameiki-sanno       |
-    | Tameike-sanno   | Akasaka, Kasumgaseki          |
-    | Kasumgaseki     | Tameike-sanno, Hibiya         |
-    | Hibiya          | Kasumgaseki, Nijubashimae     |
-    | Nijubashimae    | Hibiya, Otemachi              |
-    | Otemachi        | Nijubashimae, Shin-ochanomizu |
-    | Shin-ochanomizu | Otemachi, Yushima             |
-    | Yushima         | Shin-ochanomizu, Nezu         |
-    | Nezu            | Yushima, Sendagi              |
-    | Sendagi         | Nezu, Nishi-nippori           |
-    | Nishi-nippori   | Sendagi, Machiya              |
-    | Machiya         | Nishi-nippori, Kita-senju     |
-    | Kita-senju      | Machiya, Ayase                |
-    | Ayase           | Kita-senju, Kita-ayase        |
-    | Kita-ayase      | Ayase                         |
-    +-----------------+-------------------------------+
+    +-----------------+---------------------------------------------------------+
+    |                 |                                                         |
+    | Station Name    | Connected To                                            |
+    |                 |                                                         |
+    +-----------------+---------------------------------------------------------+
+    | Yoyogi-uehara   | Yoyogi-koen                                             |
+    | Yoyogi-koen     | Yoyogi-uehara, Meiji-jingumae                           |
+    | Meiji-jingumae  | Yoyogi-koen, Omote-sando                                |
+    | Omote-sando     | Meiji-jingumae, Nogizaka                                |
+    | Nogizaka        | Omote-sando, Akasaka                                    |
+    | Akasaka         | Nogizaka, Tameiki-sanno                                 |
+    | Tameike-sanno   | Akasaka, Kasumgaseki                                    |
+    | Kasumgaseki     | Tameike-sanno, Hibiya                                   |
+    | Hibiya          | Kasumgaseki, Nijubashimae                               |
+    | Nijubashimae    | Hibiya, Otemachi                                        |
+    | Otemachi        | Nijubashimae, Shin-ochanomizu                           |
+    | Shin-ochanomizu | Otemachi, Yushima                                       |
+    | Yushima         | Shin-ochanomizu, Nezu                                   |
+    | Nezu            | Yushima, Sendagi                                        |
+    | Sendagi         | Nezu, Nishi-nippori                                     |
+    | Nishi-nippori   | Sendagi, Machiya                                        |
+    | Machiya         | Nishi-nippori, Kita-senju                               |
+    | Kita-senju      | Machiya, Ayase                                          |
+    | Ayase           | Kita-senju, Kita-ayase                                  |
+    | Kita-ayase      | Ayase                                                   |
+    +-----------------+---------------------------------------------------------+
 
 =head1 NOTE
 
@@ -138,8 +138,8 @@ L<http://search.cpan.org/dist/Map-Tube-Tokyo/>
 
 Copyright (C) 2014 - 2015 Mohammad S Anwar.
 
-This  program  is  free software; you can redistribute it and/or modify it under
-the  terms  of the the Artistic License (2.0). You may obtain a copy of the full
+This program  is  free software; you can redistribute it and / or modify it under
+the  terms  of the the Artistic License  (2.0). You may obtain a copy of the full
 license at:
 
 L<http://www.perlfoundation.org/artistic_license_2_0>
