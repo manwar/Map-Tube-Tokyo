@@ -1,6 +1,6 @@
 package Map::Tube::Tokyo::Line::Asakusa;
 
-$Map::Tube::Tokyo::Line::Asakusa::VERSION   = '0.14';
+$Map::Tube::Tokyo::Line::Asakusa::VERSION   = '0.15';
 $Map::Tube::Tokyo::Line::Asakusa::AUTHORITY = 'cpan:MANWAR';
 
 use 5.006;
@@ -10,15 +10,15 @@ use strict; use warnings;
 
 =head1 NAME
 
-Map::Tube::Tokyo::Line::Asakusa - Tokyo Subway Asakusa Line stations.
+Map::Tube::Tokyo::Line::Asakusa - Tokyo Subway Map: Asakusa Line.
 
 =head1 VERSION
 
-Version 0.14
+Version 0.15
 
 =head1 DESCRIPTION
 
-Tokyo Subway Asakusa Line stations.
+Tokyo Subway Map: Asakusa Line.
 
     +------------------+------------------------------+
     |                  |                              |

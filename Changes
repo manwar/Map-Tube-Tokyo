@@ -1,5 +1,11 @@
 Revision history for Map-Tube-Tokyo
 
+0.15  Mon Feb 23 18:30:00 2015
+      - Upgraded to use Map::Tube v2.87.
+      - Added unit test map.t script.
+      - Added Tokyo subway map image.
+      - Tidied up pod document.
+
 0.14  Sun Feb 08 02:15:00 2015
       - Upgraded to use Map::Tube v2.78.
       - Added map image for Asakusa and Chiyoda Tokyo Subway lines.
