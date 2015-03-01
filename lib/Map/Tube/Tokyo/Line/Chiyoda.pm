@@ -1,6 +1,6 @@
 package Map::Tube::Tokyo::Line::Chiyoda;
 
-$Map::Tube::Tokyo::Line::Chiyoda::VERSION   = '0.14';
+$Map::Tube::Tokyo::Line::Chiyoda::VERSION   = '0.15';
 $Map::Tube::Tokyo::Line::Chiyoda::AUTHORITY = 'cpan:MANWAR';
 
 use 5.006;
@@ -10,42 +10,42 @@ use strict; use warnings;
 
 =head1 NAME
 
-Map::Tube::Tokyo::Line::Chiyoda - Tokyo Subway Chiyoda Line stations.
+Map::Tube::Tokyo::Line::Chiyoda - Tokyo Subway Map: Chiyoda Line.
 
 =head1 VERSION
 
-Version 0.14
+Version 0.15
 
 =head1 DESCRIPTION
 
-Tokyo Subway Chiyoda Line stations.
+Tokyo Subway Map: Chiyoda Line.
 
-    +-----------------+-------------------------------+
-    |                 |                               |
-    | Station Name    | Connected To                  |
-    |                 |                               |
-    +-----------------+-------------------------------+
-    | Yoyogi-uehara   | Yoyogi-koen                   |
-    | Yoyogi-koen     | Yoyogi-uehara, Meiji-jingumae |
-    | Meiji-jingumae  | Yoyogi-koen, Omote-sando      |
-    | Omote-sando     | Meiji-jingumae, Nogizaka      |
-    | Nogizaka        | Omote-sando, Akasaka          |
-    | Akasaka         | Nogizaka, Tameiki-sanno       |
-    | Tameike-sanno   | Akasaka, Kasumgaseki          |
-    | Kasumgaseki     | Tameike-sanno, Hibiya         |
-    | Hibiya          | Kasumgaseki, Nijubashimae     |
-    | Nijubashimae    | Hibiya, Otemachi              |
-    | Otemachi        | Nijubashimae, Shin-ochanomizu |
-    | Shin-ochanomizu | Otemachi, Yushima             |
-    | Yushima         | Shin-ochanomizu, Nezu         |
-    | Nezu            | Yushima, Sendagi              |
-    | Sendagi         | Nezu, Nishi-nippori           |
-    | Nishi-nippori   | Sendagi, Machiya              |
-    | Machiya         | Nishi-nippori, Kita-senju     |
-    | Kita-senju      | Machiya, Ayase                |
-    | Ayase           | Kita-senju, Kita-ayase        |
-    | Kita-ayase      | Ayase                         |
-    +-----------------+-------------------------------+
+    +-----------------+---------------------------------------------------------+
+    |                 |                                                         |
+    | Station Name    | Connected To                                            |
+    |                 |                                                         |
+    +-----------------+---------------------------------------------------------+
+    | Yoyogi-uehara   | Yoyogi-koen                                             |
+    | Yoyogi-koen     | Yoyogi-uehara, Meiji-jingumae                           |
+    | Meiji-jingumae  | Yoyogi-koen, Omote-sando                                |
+    | Omote-sando     | Meiji-jingumae, Nogizaka                                |
+    | Nogizaka        | Omote-sando, Akasaka                                    |
+    | Akasaka         | Nogizaka, Tameiki-sanno                                 |
+    | Tameike-sanno   | Akasaka, Kasumgaseki                                    |
+    | Kasumgaseki     | Tameike-sanno, Hibiya                                   |
+    | Hibiya          | Kasumgaseki, Nijubashimae                               |
+    | Nijubashimae    | Hibiya, Otemachi                                        |
+    | Otemachi        | Nijubashimae, Shin-ochanomizu                           |
+    | Shin-ochanomizu | Otemachi, Yushima                                       |
+    | Yushima         | Shin-ochanomizu, Nezu                                   |
+    | Nezu            | Yushima, Sendagi                                        |
+    | Sendagi         | Nezu, Nishi-nippori                                     |
+    | Nishi-nippori   | Sendagi, Machiya                                        |
+    | Machiya         | Nishi-nippori, Kita-senju                               |
+    | Kita-senju      | Machiya, Ayase                                          |
+    | Ayase           | Kita-senju, Kita-ayase                                  |
+    | Kita-ayase      | Ayase                                                   |
+    +-----------------+---------------------------------------------------------+
 
 =head1 NOTE
 

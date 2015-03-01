@@ -1,6 +1,6 @@
 package Map::Tube::Tokyo::Line::Asakusa;
 
-$Map::Tube::Tokyo::Line::Asakusa::VERSION   = '0.14';
+$Map::Tube::Tokyo::Line::Asakusa::VERSION   = '0.15';
 $Map::Tube::Tokyo::Line::Asakusa::AUTHORITY = 'cpan:MANWAR';
 
 use 5.006;
@@ -10,42 +10,42 @@ use strict; use warnings;
 
 =head1 NAME
 
-Map::Tube::Tokyo::Line::Asakusa - Tokyo Subway Asakusa Line stations.
+Map::Tube::Tokyo::Line::Asakusa - Tokyo Subway Map: Asakusa Line.
 
 =head1 VERSION
 
-Version 0.14
+Version 0.15
 
 =head1 DESCRIPTION
 
-Tokyo Subway Asakusa Line stations.
+Tokyo Subway Map: Asakusa Line.
 
-    +------------------+------------------------------+
-    |                  |                              |
-    | Station Name     | Connected To                 |
-    |                  |                              |
-    +------------------+------------------------------+
-    | Nishi-magome     | Magome                       |
-    | Magome           | Nishi-magome, Nakanobu       |
-    | Nakanobu         | Magome, Togoshi              |
-    | Togoshi          | Nakanobu, Gotanda            |
-    | Gotanda          | Togoshi, Takanwadai          |
-    | Takanawadai      | Gotanda, Sengakuji           |
-    | Sengakuji        | Takanawadai, Mita            |
-    | Mita             | Sengakuji, Diamon            |
-    | Diamon           | Mita, Shimbashi              |
-    | Shimbashi        | Diamon, Higashi-ginza        |
-    | Higashi-ginza    | Shimbashi, Takaracho         |
-    | Takaracho        | Higashi-ginza, Nihombashi    |
-    | Nihombashi       | Takaracho, Ningyocho         |
-    | Ningyocho        | Nihombashi, Bakuro-yokoyama  |
-    | Bakuro-yokoyama  | Ningyocho, Asakusabahi       |
-    | Asakusabashi     | Bakuro-yokoyama, Kuramae     |
-    | Kuramae          | Asakusabashi, Asakusa        |
-    | Asakusa          | Kuramae, Honjo-azamubashi    |
-    | Honjo-azumabashi | Asakusa, Oshiage             |
-    | Oshiage          | Honjo-azumbashi              |
-    +------------------+------------------------------+
+    +------------------+--------------------------------------------------------+
+    |                  |                                                        |
+    | Station Name     | Connected To                                           |
+    |                  |                                                        |
+    +------------------+--------------------------------------------------------+
+    | Nishi-magome     | Magome                                                 |
+    | Magome           | Nishi-magome, Nakanobu                                 |
+    | Nakanobu         | Magome, Togoshi                                        |
+    | Togoshi          | Nakanobu, Gotanda                                      |
+    | Gotanda          | Togoshi, Takanwadai                                    |
+    | Takanawadai      | Gotanda, Sengakuji                                     |
+    | Sengakuji        | Takanawadai, Mita                                      |
+    | Mita             | Sengakuji, Diamon                                      |
+    | Diamon           | Mita, Shimbashi                                        |
+    | Shimbashi        | Diamon, Higashi-ginza                                  |
+    | Higashi-ginza    | Shimbashi, Takaracho                                   |
+    | Takaracho        | Higashi-ginza, Nihombashi                              |
+    | Nihombashi       | Takaracho, Ningyocho                                   |
+    | Ningyocho        | Nihombashi, Bakuro-yokoyama                            |
+    | Bakuro-yokoyama  | Ningyocho, Asakusabahi                                 |
+    | Asakusabashi     | Bakuro-yokoyama, Kuramae                               |
+    | Kuramae          | Asakusabashi, Asakusa                                  |
+    | Asakusa          | Kuramae, Honjo-azamubashi                              |
+    | Honjo-azumabashi | Asakusa, Oshiage                                       |
+    | Oshiage          | Honjo-azumbashi                                        |
+    +------------------+--------------------------------------------------------+
 
 =head1 NOTE
 
