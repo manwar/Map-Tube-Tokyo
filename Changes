@@ -1,10 +1,16 @@
 Revision history for Map-Tube-Tokyo
 
-0.15  Sun Mar 01 09:00:00 2015
-      - Upgraded to use Map::Tube v2.87.
+0.17  Sun Mar 01 09:25:00 2015
       - Added File::ShareDir::Install as configure requires in the Makefile.PL file.
-      - Added Tokyo Subway Map.
-      - Tidied up pod document in general.
+
+0.16  Mon Feb 23 20:00:00 2015
+      - Tidied up pod document.
+
+0.15  Mon Feb 23 18:30:00 2015
+      - Upgraded to use Map::Tube v2.87.
+      - Added unit test map.t script.
+      - Added Tokyo subway map image.
+      - Tidied up pod document.
 
 0.14  Sun Feb 08 02:15:00 2015
       - Upgraded to use Map::Tube v2.78.
