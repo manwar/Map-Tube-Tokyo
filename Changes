@@ -1,5 +1,8 @@
 Revision history for Map-Tube-Tokyo
 
+0.18  Sun Mar 01 09:50:00 2015
+      - Updated Copyright year information in the README file.
+
 0.17  Sun Mar 01 09:25:00 2015
       - Added File::ShareDir::Install as configure requires in the Makefile.PL file.
 
