@@ -17,7 +17,8 @@ sub _expected_route {
     my ($route) = @_;
     my $nodes   = [];
     foreach my $name (split /\,/,$route) {
-        push @$nodes, $subway->get_node_by_name($name);
+        my @_names = $subway->get_node_by_name($name);
+        push @$nodes, $_names[0];
     }
 
     return Map::Tube::Route->new(

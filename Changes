@@ -1,5 +1,8 @@
 Revision history for Map-Tube-Tokyo
 
+0.19  Mon Jul 27 12:00:00 2015
+      - Corrected Asakusa and Chiyoda lines data in the map file.
+
 0.18  Sun Mar 01 09:50:00 2015
       - Updated Copyright year information in the README file.
 
