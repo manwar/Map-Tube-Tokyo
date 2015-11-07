@@ -1,5 +1,9 @@
 Revision history for Map-Tube-Tokyo
 
+0.22  Sat Nov 07 10:40:00 2015
+      - Fixed the error reported by CPANT Testers.
+      - Upgraded to use Map::Tube v3.12.
+
 0.21  Wed Sep 23 10:20:00 2015
       - Upgraded to use Map::Tube v3.01.
 

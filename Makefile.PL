@@ -21,22 +21,22 @@ WriteMakefile(
         'File::ShareDir::Install' => '0.09',
     },
     BUILD_REQUIRES   => {
-        'Test::More' => '1.001014',
+        'Test::More' => 0,
     },
     PREREQ_PM => {
         'Moo'              => '2.000000',
         'namespace::clean' => '0.24',
         'File::Share'      => '0.25',
-        'Map::Tube'        => '3.01',
+        'Map::Tube'        => '3.12',
     },
     dist  => { COMPRESS => 'gzip -9f', SUFFIX => 'gz', },
     clean => { FILES => 'Map-Tube-Tokyo-*' },
     (eval { ExtUtils::MakeMaker->VERSION(6.46) } ? (META_MERGE => {
         'meta-spec' => { version => 2 },
         provides    => {
-            'Map::Tube::Tokyo'                => { file => 'lib/Map/Tube/Tokyo.pm',              version => '0.21' },
-            'Map::Tube::Tokyo::Line::Asakusa' => { file => 'lib/Map/Tube/Tokyo/Line/Asakusa.pm', version => '0.21' },
-            'Map::Tube::Tokyo::Line::Chiyoda' => { file => 'lib/Map/Tube/Tokyo/Line/Chiyoda.pm', version => '0.21' },
+            'Map::Tube::Tokyo'                => { file => 'lib/Map/Tube/Tokyo.pm',              version => '0.22' },
+            'Map::Tube::Tokyo::Line::Asakusa' => { file => 'lib/Map/Tube/Tokyo/Line/Asakusa.pm', version => '0.22' },
+            'Map::Tube::Tokyo::Line::Chiyoda' => { file => 'lib/Map/Tube/Tokyo/Line/Chiyoda.pm', version => '0.22' },
         },
         resources => {
             repository => {
