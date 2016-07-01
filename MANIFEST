@@ -10,9 +10,7 @@ MANIFEST.SKIP
 README
 t/00-load.t
 t/manifest.t
-t/map.t
 t/pod.t
-t/generic.t
+t/map-tube-tokyo.t
 t/meta-yml.t
 t/meta-json.t
-t/asakusa-chiyoda.t

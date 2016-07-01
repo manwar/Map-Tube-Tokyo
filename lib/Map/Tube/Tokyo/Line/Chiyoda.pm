@@ -1,6 +1,6 @@
 package Map::Tube::Tokyo::Line::Chiyoda;
 
-$Map::Tube::Tokyo::Line::Chiyoda::VERSION   = '0.22';
+$Map::Tube::Tokyo::Line::Chiyoda::VERSION   = '0.23';
 $Map::Tube::Tokyo::Line::Chiyoda::AUTHORITY = 'cpan:MANWAR';
 
 use 5.006;
@@ -14,16 +14,14 @@ Map::Tube::Tokyo::Line::Chiyoda - Tokyo Subway Map: Chiyoda Line.
 
 =head1 VERSION
 
-Version 0.22
+Version 0.23
 
 =head1 DESCRIPTION
 
 Tokyo Subway Map: Chiyoda Line.
 
     +-----------------+---------------------------------------------------------+
-    |                 |                                                         |
     | Station Name    | Connected To                                            |
-    |                 |                                                         |
     +-----------------+---------------------------------------------------------+
     | Yoyogi-uehara   | Yoyogi-koen                                             |
     | Yoyogi-koen     | Yoyogi-uehara, Meiji-jingumae                           |
@@ -136,7 +134,7 @@ L<http://search.cpan.org/dist/Map-Tube-Tokyo/>
 
 =head1 LICENSE AND COPYRIGHT
 
-Copyright (C) 2014 - 2015 Mohammad S Anwar.
+Copyright (C) 2014 - 2016 Mohammad S Anwar.
 
 This program  is  free software; you can redistribute it and / or modify it under
 the  terms  of the the Artistic License  (2.0). You may obtain a copy of the full
