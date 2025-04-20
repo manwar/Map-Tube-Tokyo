@@ -1,6 +1,6 @@
 package Map::Tube::Tokyo;
 
-$Map::Tube::Tokyo::VERSION   = '0.62';
+$Map::Tube::Tokyo::VERSION   = '0.63';
 $Map::Tube::Tokyo::AUTHORITY = 'cpan:MANWAR';
 
 =encoding utf8
@@ -11,7 +11,7 @@ Map::Tube::Tokyo - Interface to the Tokyo Subway Map.
 
 =head1 VERSION
 
-Version 0.62
+Version 0.63
 
 =cut
 
@@ -70,7 +70,7 @@ given  stations. It covers the following Tokyo Subway Lines just yet:
 
 =head1 MAP DATA
 
-The map data collected from L<this website|here|http://en.wikipedia.org/wiki/Tokyo_subway>.
+The map data collected from L<this website|http://en.wikipedia.org/wiki/Tokyo_subway>.
 
 =head1 CONSTRUCTOR
 
