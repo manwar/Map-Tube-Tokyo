@@ -1,6 +1,6 @@
 package Map::Tube::Tokyo::Line::Chiyoda;
 
-$Map::Tube::Tokyo::Line::Chiyoda::VERSION   = '0.60';
+$Map::Tube::Tokyo::Line::Chiyoda::VERSION   = '0.61';
 $Map::Tube::Tokyo::Line::Chiyoda::AUTHORITY = 'cpan:MANWAR';
 
 use 5.006;
@@ -14,7 +14,7 @@ Map::Tube::Tokyo::Line::Chiyoda - Tokyo Subway Map: Chiyoda Line.
 
 =head1 VERSION
 
-Version 0.60
+Version 0.61
 
 =head1 DESCRIPTION
 
@@ -140,7 +140,7 @@ L<https://metacpan.org/dist/Map-Tube-Tokyo>
 
 =head1 LICENSE AND COPYRIGHT
 
-Copyright (C) 2014 - 2024 Mohammad Sajid Anwar.
+Copyright (C) 2014 - 2025 Mohammad Sajid Anwar.
 
 This program  is  free software; you can redistribute it and / or modify it under
 the  terms  of the the Artistic License  (2.0). You may obtain a copy of the full
