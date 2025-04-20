@@ -1,5 +1,8 @@
 Revision history for Map::Tube::Tokyo
 
+0.62  Sun Apr 20 09:55:00 2025
+      - Added map data source in the pod.
+
 0.61  Sun Apr 20 09:35:00 2025
       - Proposed patch for FAIL report, thanks Andreas J. König.
         http://www.cpantesters.org/cpan/report/cb419ede-1d3e-11f0-9d5f-fa9c78e58e3d

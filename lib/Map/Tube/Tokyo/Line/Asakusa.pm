@@ -1,6 +1,6 @@
 package Map::Tube::Tokyo::Line::Asakusa;
 
-$Map::Tube::Tokyo::Line::Asakusa::VERSION   = '0.61';
+$Map::Tube::Tokyo::Line::Asakusa::VERSION   = '0.62';
 $Map::Tube::Tokyo::Line::Asakusa::AUTHORITY = 'cpan:MANWAR';
 
 use 5.006;
@@ -14,7 +14,7 @@ Map::Tube::Tokyo::Line::Asakusa - Tokyo Subway Map: Asakusa Line.
 
 =head1 VERSION
 
-Version 0.61
+Version 0.62
 
 =head1 DESCRIPTION
 
@@ -68,6 +68,10 @@ Tokyo Subway Map: Asakusa Line.
 =item * The station "Oshiage" is also part of Hanzōmon Line.
 
 =back
+
+=head1 MAP DATA
+
+The map data for the line B<Asakusa> collected from L<this page|https://en.wikipedia.org/wiki/Toei_Asakusa_Line)>.
 
 =head1 MAP
 

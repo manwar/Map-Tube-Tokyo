@@ -1,6 +1,6 @@
 package Map::Tube::Tokyo::Line::Chiyoda;
 
-$Map::Tube::Tokyo::Line::Chiyoda::VERSION   = '0.61';
+$Map::Tube::Tokyo::Line::Chiyoda::VERSION   = '0.62';
 $Map::Tube::Tokyo::Line::Chiyoda::AUTHORITY = 'cpan:MANWAR';
 
 use 5.006;
@@ -14,7 +14,7 @@ Map::Tube::Tokyo::Line::Chiyoda - Tokyo Subway Map: Chiyoda Line.
 
 =head1 VERSION
 
-Version 0.61
+Version 0.62
 
 =head1 DESCRIPTION
 
@@ -79,6 +79,10 @@ Tokyo Subway Map: Chiyoda Line.
           Hibiya Line.
 
 =back
+
+=head1 MAP DATA
+
+The map data for the line B<Chiyoda> collected from L<this page|https://en.wikipedia.org/wiki/Tokyo_Metro_Chiyoda_Line>.
 
 =head1 MAP
 
